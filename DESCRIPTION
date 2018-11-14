@@ -1,32 +1,18 @@
-Package: BSL
+Package: ALKr
 Type: Package
-Title: Bayesian Synthetic Likelihood with Graphical Lasso
-Version: 0.1.1
-Date: 2018-03-23
-Authors@R: c(person("Ziwen","An",role=c("aut","cre"),email="ziwen.an@hdr.qut.edu.au",comment = c(ORCID = "0000-0002-9947-5182")),
-            person("Christopher C.","Drovandi",role=c("ctb"),email="c.drovandi@qut.edu.au",comment = c(ORCID = "0000-0001-9222-8763")),
-            person("Leah F.","South",role=c("ctb"),email="leah.south@hdr.qut.edu.au",comment = c(ORCID = "0000-0002-5646-2963")))
-Description: Bayesian synthetic likelihood (BSL, Price et al. (2018) <doi:10.1080/10618600.2017.1302882>)
- is an alternative to standard, non-parametric approximate Bayesian computation (ABC). BSL assumes a
- multivariate normal distribution for the summary statistic likelihood and it is suitable when
- the distribution of the model summary statistics is sufficiently regular. This package provides
- a Metropolis Hastings Markov chain Monte Carlo implementation of BSL and
- BSL with graphical lasso (BSLasso, An et al. (2018) <https://eprints.qut.edu.au/102263/>),
- which is computationally more efficient when the dimension of the summary statistic is high.
- Extensions to this package are planned.
-License: GPL (>= 2)
-LazyLoad: yes
-Imports: glasso, ggplot2, stats, MASS, cvTools, grid, gridExtra,
-        foreach, coda, utils
-Suggests: elliplot
-LinkingTo: Rcpp, RcppArmadillo
-LazyData: true
-RoxygenNote: 6.0.1
+Title: Generate Age-Length Keys for fish populations
+Description: A collection of functions that implement several algorithms for
+    generating age-length keys for fish populations from incomplete data.
+URL: http://www.github.com/ALKr
+Version: 0.5.3.1
+Date: 2014-02-20
+Author: Jose Francisco Loff, Alberto Murta, Laurence Kell
+Maintainer: Jose Francisco Loff <jfloff@phistat.com>
+Depends: R (>= 2.15.2)
+LinkingTo: Rcpp
+Imports: MASS, methods, Rcpp (>= 0.10.2)
+License: BSD_3_clause + file LICENSE
+Packaged: 2014-02-26 10:46:40 UTC; zeloff
 NeedsCompilation: yes
-Packaged: 2018-03-23 02:39:35 UTC; n8001626
-Author: Ziwen An [aut, cre] (<https://orcid.org/0000-0002-9947-5182>),
-  Christopher C. Drovandi [ctb] (<https://orcid.org/0000-0001-9222-8763>),
-  Leah F. South [ctb] (<https://orcid.org/0000-0002-5646-2963>)
-Maintainer: Ziwen An <ziwen.an@hdr.qut.edu.au>
 Repository: CRAN
-Date/Publication: 2018-03-23 14:14:53 UTC
+Date/Publication: 2014-02-26 14:24:59
